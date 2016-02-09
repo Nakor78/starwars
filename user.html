@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Star Wars Quotes</title>
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>  
+  <body>
+    <div class="mdl-cell mdl-cell--12-col">
+      <div class="docs-text-styling component-title">
+        <h1>Welcome</h1>
+        <p>Please select the action you want to do</p>
+      </div>
+    </div>
+    <button id="rng" onclick="resetRNG();" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Reset RNG</button>
+    <div /> 
+    <button id="randomQuote" style="background-color: teal" onclick="userRandomQuote();" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Random quote</button>
+    <div id="showMeRandomQuote"></div> 
+    <button id="characterName" style="background-color: purple" onclick="userCharacterName();" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Character name</button>
+    <div id="showMeCharacterName"></div> 
+    <div>
+      <p />
+      <p>Please select the character to show one of his citation</p>
+      <button id="yoda" style="background-color: green" onclick="quoteYoda();" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Yoda</button>
+      <button id="senatorPalpatine" style="background-color: black" onclick="quoteSenatorPalpatine();" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Senator palpatine</button>
+      <button id="countDooku" style="background-color: grey" onclick="quoteCountDooku();" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Count Dooku</button>
+      <button id="darthVader" style="background-color: red" onclick="quoteDarthVader();" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Darth vader</button>
+      <button id="princessLeila" style="background-color: blue" onclick="quotePrincessLeila();" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Princess leila</button>
+      <button id="quiGonJinn" style="background-color: yellow" onclick="quoteQuiGonJinn();"  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Qui-Gon Jinn</button>
+      <button id="obiWanKenobi" style="background-color: orange" onclick="quoteObiWanKenobi();" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Obi-Wan-Kenobi</button>
+      <div id="showMeQuoteFromCharacterChosen"></div> 
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>    
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
