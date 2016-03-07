@@ -35,33 +35,6 @@ var quotes = [{
   'quote': 'The Force is strong with this one.'
 }];
 
-var numberOfQuotes = quotes.length;
-var rdm = Math.floor(Math.random() * numberOfQuotes);
-
-var resetRNG = function resetRNG () {  
-  rdm = Math.floor(Math.random() * numberOfQuotes);
-}
-
-var getRandomQuote = function getRandomQuote () {
-  var quoteToReturn = quotes[rdm].quote;
-  return quoteToReturn;  
-};
-
-var getAuthor = function getAuthor () {
-  var authorToReturn = quotes[rdm].author;
-  return authorToReturn;
-};
-
-function userRandomQuote () {
-  var randomQuote = getRandomQuote();
-  document.getElementById("showMeRandomQuote").innerHTML = randomQuote;
-};
-
-function userCharacterName () {
-  var characterName = getAuthor();
-  document.getElementById("showMeCharacterName").innerHTML = characterName;
-};
-
 function quoteYoda () {
   var rdmYoda = Math.floor(Math.random() * 4);
 
