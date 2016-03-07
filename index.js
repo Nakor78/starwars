@@ -38,6 +38,20 @@ var quotes = [{
 var numberOfQuotes = quotes.length;
 var rdm = Math.floor(Math.random() * numberOfQuotes);
 
+var buttonResetRNG = function buttonResetRNG () {  
+  ReactDOM.render(
+    React.createClass({
+        getInitialState: function() {
+          return {pressed: false};
+        },
+        handleClick: function(event) {
+         rdm = Math.floor(Math.random() * numberOfQuotes);
+       }
+      }),
+    document.getElementById('buttonResetRNG')
+  );
+}
+
 var getRandomQuote = function getRandomQuote () { 
   ReactDOM.render(
   React.createElement('h6',null,quotes[rdm].quote),
