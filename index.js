@@ -35,6 +35,23 @@ var quotes = [{
   'quote': 'The Force is strong with this one.'
 }];
 
+var numberOfQuotes = quotes.length;
+var rdm = Math.floor(Math.random() * numberOfQuotes);
+
+var getRandomQuote = function getRandomQuote () { 
+  ReactDOM.render(
+  React.createElement('h6',null,quotes[rdm].quote),
+  document.getElementById('getRandomQuote')
+ );
+};
+
+var getAuthor = function getAuthor () {
+  ReactDOM.render(
+  React.createElement('h6',null,quotes[rdm].author),
+  document.getElementById('getAuthor')
+ );
+}; 
+
 function quoteYoda () {
   var rdmYoda = Math.floor(Math.random() * 4);
 

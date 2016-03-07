@@ -16,9 +16,9 @@
     </div>
     <button id="buttonResetRNG" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Reset RNG</button>
     <div />
-    <button id="randomQuote" style="background-color: teal" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Random quote</button>
+    <button id="randomQuote" onClick="getRandomQuote();" style="background-color: teal" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Random quote</button>
     <div id="getRandomQuote"></div>
-    <button id="characterName" style="background-color: purple" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Character name</button>    
+    <button id="characterName" onClick="getAuthor();" style="background-color: purple" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Character name</button>    
     <div id="getAuthor"></div>
     <div>
       <h4>Please select the character to show one of his citation</h4>
@@ -88,20 +88,8 @@
         <ResetRNG />,
         document.getElementById('buttonResetRNG')
       );
-      
-      var getRandomQuote = function getRandomQuote () { 
-        ReactDOM.render(
-        React.createElement('h6',null,quotes[rdm].quote),
-        document.getElementById('getRandomQuote')
-       );
-      };
 
-      var getAuthor = function getAuthor () {
-        ReactDOM.render(
-        React.createElement('h6',null,quotes[rdm].author),
-        document.getElementById('getAuthor')
-       );
-      };      
+           
     </script>
   </body>
 </html>
